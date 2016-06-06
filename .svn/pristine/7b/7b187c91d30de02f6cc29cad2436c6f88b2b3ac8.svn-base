@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\sbhonhariya\Documents\Visual Studio 2015\Projects\ZiplogixPhoneGapVS - Copy\ZiplogixPhonegapVS\platforms\android\build\intermediates\exploded-aar\android\CordovaLib\unspecified\debug\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="a076d0f6fe8dda76932f96db442085ced952a652">
+        <dex dex="C:\Users\sbhonhariya\Documents\Visual Studio 2015\Projects\ZiplogixPhoneGapVS - Copy\ZiplogixPhonegapVS\platforms\android\build\intermediates\pre-dexed\debug\CordovaLib-unspecified-debug_03c5630581b45bf942f036b48679f848003c453d.jar" />
+    </item>
+    <item
+        jar="C:\Practice\ZiplogixPhoneGapVS_LocalStorageSample\ZiplogixPhonegapVS\platforms\android\build\intermediates\exploded-aar\android\CordovaLib\unspecified\debug\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="079773c4dc6a9e60d8d420dd5254605101e5d925">
+        <dex dex="C:\Practice\ZiplogixPhoneGapVS_LocalStorageSample\ZiplogixPhonegapVS\platforms\android\build\intermediates\pre-dexed\debug\CordovaLib-unspecified-debug_198c2e2fc174eb19c89c899debc35ef1103b4a12.jar" />
+    </item>
+
+</items>

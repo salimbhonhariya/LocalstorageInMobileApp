@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <!--
+        Customize the content security policy in the meta tag below as needed. Add 'unsafe-inline' to default-src to enable inline JavaScript.
+        For details, see http://go.microsoft.com/fwlink/?LinkID=617521
+    -->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: http://GlobalQuran.com/ http://muslimsalat.com http://api.openprayermap.org https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+        
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+
+        <script src="scripts/jquery-2.2.3.min.js"></script>f
+        <script src="scripts/jquery.mobile-1.4.5.min.js"></script>
+
+        <link href="css/jquery.mobile-1.4.5.min.css" rel="stylesheet" />
+        <title>Islamic Prayer times</title>
+
+        <script>
+            function salim() {
+                $('#Load').load('http://www.google.co.in');
+
+                /*Using ajax*/
+                $.ajax({
+                    dataType: 'html',
+                    url: 'http://www.google.co.in',
+                    success: function (data) {
+                        $('#ajax').html($(data).children());
+                    }
+                });
+            }
+            /*Using Jquery Load()*/
+          
+        </script>
+    </head>
+
+
+
+    <body>
+
+
+        <div data-role="page" id="prayer-page">
+
+            <div data-role="header" class="header">
+                <h1 id="app-title">By Salim Bhonhariya</h1>
+                <a href="/" class="ui-btn ui-btn-left ui-btn-corner-all ui-icon-home ui-btn-icon-notext" rel="external">Home</a>
+            </div>
+
+            <div role="main" class="ui-content">
+                <form>
+                    <!--<label for="prayer-location">Enter City,State,Country separated by comma:</label>
+                    <input id="prayer-location-input" name="prayer-location" placeholder="Canton,MI,USA"  required  />
+                    <button id="get-prayer-btn" data-role="button" data-icon="search">Find Prayer Time</button>-->
+                </form>
+
+                <ul id="prayer-data" data-role="listview" data-inset="true" class="ui-listview ui-listview-inset ui-corner-all ui-shadow not-displayed">
+                    <!--<li data-role="list-divider" id="title" class="ui-li-divider ui-bar-a"></li>
+              
+                    <li><span id="date"></span> </li>
+        
+                    <li>Calculation Method: <span id="TimeCalculationMethod"></span> </li>
+                    <li>Fajr: <span id="fajr"></span> </li>
+                    <li>Zuhar: <span id="Zuhar"></span></li>
+                    <li>Asar: <span id="Asar"></span></li>
+                    <li>Maghrib: <span id="Maghrib"></span></li>
+                    <li>Isha: <span id="isha"></span></li>
+                    <li>by: <span id="by">by Muhammad Salim Bhonhariya</span></li>-->
+                   
+
+                </ul>
+                <div id="Load" onload=salim();>gdfgfdgdfgfdgdfgfdg</div>
+                <hr />
+                <div id="ajax"></div>
+       
+                <div id="error-msg" class="not-displayed">
+                </div>
+
+            </div>
+
+            <footer data-role="footer" data-position="fixed">
+                <h4>Find Prayer time by Muhammad Salim Bhonhariya</h4>
+            </footer>
+
+        </div>
+
+        <script src="scripts/prayer.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="scripts/platformOverrides.js"></script>
+        <script type="text/javascript" src="scripts/index.js"></script>
+
+    </body>
+</html>
